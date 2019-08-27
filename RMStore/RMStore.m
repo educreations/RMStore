@@ -457,8 +457,7 @@ typedef void (^RMStoreSuccessBlock)(void);
     }
 }
 
-#if defined(__IPHONE_11_0) && (__IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_11_0)
-- (BOOL)paymentQueue:(SKPaymentQueue *)queue shouldAddStorePayment:(SKPayment *)payment forProduct:(SKProduct *)product
+- (BOOL)paymentQueue:(SKPaymentQueue *)queue shouldAddStorePayment:(SKPayment *)payment forProduct:(SKProduct *)product API_AVAILABLE(ios(11.0))
 {
     if (self.storePaymentAcceptor == nil || ![self.storePaymentAcceptor acceptStorePayment:payment fromQueue:queue forProduct:product])
     {
@@ -468,7 +467,6 @@ typedef void (^RMStoreSuccessBlock)(void);
         return YES;
     }
 }
-#endif
 
 #pragma mark Download State
 
