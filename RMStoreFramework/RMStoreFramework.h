@@ -20,6 +20,5 @@ FOUNDATION_EXPORT const unsigned char RMStoreFrameworkVersionString[];
 #import <RMStoreFramework/RMStoreAppReceiptVerifier.h>
 #import <RMStoreFramework/RMStoreKeychainPersistence.h>
 #import <RMStoreFramework/RMStoreTransaction.h>
-#import <RMStoreFramework/RMStoreTransactionReceiptVerifier.h>
 #import <RMStoreFramework/RMStoreUserDefaultsPersistence.h>
 #import <RMStoreFramework/RMStore.h>
