@@ -139,7 +139,7 @@ typedef void (^RMStoreSuccessBlock)(void);
     NSMutableArray *_restoredTransactions;
     
     NSMutableArray *_storedStorePayments;
-    
+
     NSInteger _pendingRestoredTransactionsCount;
     BOOL _restoredCompletedTransactionsFinished;
     
@@ -401,8 +401,6 @@ typedef void (^RMStoreSuccessBlock)(void);
                 break;
             case SKPaymentTransactionStateDeferred:
                 [self didDeferTransaction:transaction];
-                break;
-            default:
                 break;
         }
     }
